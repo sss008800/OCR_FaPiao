@@ -48,13 +48,13 @@ pip install -r ./ppstructure/kie/requirements.txt
 
 命令：
 ```
-python tools/train.py -c configs/kie/vi_layoutxlm/ser_vi_layoutxlm_xfund_zh_udml.yml
+python tools/train.py -c ./fapiao/vi_layoutxlm/ser_vi_layoutxlm_xfund_zh_udml.yml
 ```
 
 ## 三、评估（可以跳过）
 
 ```
-python tools/eval.py -c ./fapiao/ser_vi_layoutxlm_xfund_zh.yml -o Architecture.Backbone.checkpoints="fapiao/ser_vi_layoutxlm_fapiao_trained/best_accuracy/"
+python tools/eval.py -c ./fapiao/ser_vi_layoutxlm_xfund_zh.yml -o Architecture.Backbone.checkpoints="./output/ser_vi_layoutxlm_xfund_zh_udml/best_accuracy/"
 ```
 
 ## 四、推理
